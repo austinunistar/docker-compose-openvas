@@ -11,8 +11,8 @@ services:
       - ./local.env
     volumes:
       - ./:/config
-      - gvm_data:/usr/local/var/lib
-      - gvm_db:/var/lib/postgresql/data
+      - ./gvm_data:/usr/local/var/lib
+      - ./gvm_db:/var/lib/postgresql/data
     tty: true
 
 volumes:
